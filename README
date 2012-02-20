@@ -10,9 +10,13 @@ If you have any question, please connect me via my email.
 
 So, have fun.
 
----update on Feb, 20, 2012---
+---update on Feb, 20, 2012 "fifth commit"---
 ds_project_manual.pdf is a technical report which describes and records Tetris we create.
 Now it is just a format without any contents. We may discuss it later.
+
+---update on Feb. 20, 2012 "sixth commit"---
+012BlockDown.java is a program which shows how to make the block go down automatically.
+This file provides a clear view of simple GUI program design.
 
 Regards,
 Hu Yuhuang.
