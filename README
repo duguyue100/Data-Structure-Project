@@ -18,6 +18,10 @@ Now it is just a format without any contents. We may discuss it later.
 012BlockDown.java is a program which shows how to make the block go down automatically.
 This file provides a clear view of simple GUI program design.
 
+---update on Feb. 22, 2012 "seventh commit"---
+013FillBlock.java is a program which can fill all frame with block automatically.
+Furthermore, the program can cancel the line which has filled.
+
 Regards,
 Hu Yuhuang.
 duguyue100@gmail.com
