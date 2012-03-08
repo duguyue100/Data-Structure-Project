@@ -78,7 +78,7 @@ public class Time24 {
 	public String toString()
 	{
 		DecimalFormat fmt=new DecimalFormat("00");
-		return new String(hour+":"+fmt.format(minute));
+		return new String(hour+"."+fmt.format(minute));
 	}
 	
 	public static Time24 praseTime(String s)
@@ -89,7 +89,7 @@ public class Time24 {
 		int k=0;
 		while (s.charAt(k)!=':')
 		{
-			hours=hours+s.charAt(0);
+			hours=hours+s.charAt(k);
 			k++;
 		}
 		k++;
