@@ -78,9 +78,6 @@ public class Bag<T> {
 	
 	public void print()
 	{
-		for (int i=0;i<elements.size();i++)
-		{
-			System.out.println(elements.get(i));
-		}
+		System.out.println(elements.toString());
 	}
 }
