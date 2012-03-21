@@ -55,20 +55,19 @@ public class Bag<T> {
 	
 	public static <T> Bag<T> difference(Bag<T> bagA, Bag<T> bagB)
 	{
-		Bag<T> bag1=bagA.union(bagA, bagB);
-		Bag<T> bag2=bagA.intersection(bagA, bagB);
+		Bag<T> bag1=bagA.intersection(bagA, bagB);
 		
-		for (int i=0;i<bag1.elements.size();i++)
+		for (int i=0;i<bagA.elements.size();i++)
 		{
-			for (int j=0;j<bag2.elements.size();j++)
+			for (int j=0;j<bag1.elements.size();j++)
 			{
-				if (bag1.elements.get(i).equals(bag2.elements.get(j)))
+				if (bagA.elements.get(i).equals(bag1.elements.get(j)))
 				{
-					bag1.elements.remove(bag1.elements.get(i));
+					bagA.elements.remove(bagA.elements.get(i));
 				}
 			}
 		}
-		return bag1;
+		return bagA;
 	}
 	
 	public void add(T e)
