@@ -13,7 +13,7 @@ public class Bag<T> {
 			boolean flag=false;
 			for (int j=0;j<bagResult.elements.size();j++)
 			{
-				if (bagB.elements.get(i)==bagResult.elements.get(j))
+				if (bagB.elements.get(i).equals(bagResult.elements.get(j))==true)
 					flag=true;
 			}
 			
@@ -37,7 +37,7 @@ public class Bag<T> {
 			boolean flag=false;
 			for (int j=0;j<bagB.elements.size();j++)
 			{
-				if (bagA.elements.get(i)==bagB.elements.get(j))
+				if (bagA.elements.get(i).equals(bagB.elements.get(j))==true)
 				{
 					flag=true;
 					break;
@@ -62,7 +62,7 @@ public class Bag<T> {
 		{
 			for (int j=0;j<bag2.elements.size();j++)
 			{
-				if (bag1.elements.get(i)==bag2.elements.get(j))
+				if (bag1.elements.get(i).equals(bag2.elements.get(j)))
 				{
 					bag1.elements.remove(bag1.elements.get(i));
 				}
@@ -73,7 +73,8 @@ public class Bag<T> {
 	
 	public void add(T e)
 	{
-		elements.add(e);
+		if (elements.contains(e)==false)
+			elements.add(e);
 	}
 	
 	public void print()
