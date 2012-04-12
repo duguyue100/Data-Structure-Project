@@ -22,6 +22,31 @@ This file provides a clear view of simple GUI program design.
 013FillBlock.java is a program which can fill all frame with block automatically.
 Furthermore, the program can cancel the line which has filled.
 
+---update on Mar. 30, 2012 "generic class tutorial 2"---
+In this update, I upload some simple data structure which represent by generic class.
+You may want to check it.
+
+---update on Mar. 31, 2012 "sorting algorithms"---
+I upload five basic sorting algorithms.
+You can check it if you have any problem on implementing these algorithms.
+
+--------------------------------------------------------
+--------------------------------------------------------
+Important Message:
+
+The reason why I wrote these code is to help the students who have implement
+problem on data structure.
+
+So, if you have any problem, I hope you can email or message me.
+
+By the way, recently, I would upload a series of foundational algorithms,
+so please check it if you need.
+
+--------------------------------------------------------
+--------------------------------------------------------
+
+Programming for fun!
+
 Regards,
 Hu Yuhuang.
 duguyue100@gmail.com
