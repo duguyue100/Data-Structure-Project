@@ -32,8 +32,9 @@ public class RingTest {
 			}	
 			i++;
 		}
-		System.out.print("The remaining number is ");
-		ring.print();
+		System.out.print("The remaining number is: ");
+		//ring.print();
+		System.out.print("___"+ring.e.getFirst()+"___");
 	}
 	
 	public static String convert(int n)

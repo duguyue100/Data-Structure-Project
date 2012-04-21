@@ -32,16 +32,19 @@ public class Ring {
 	public void eliminate(int m)
 	{
 		if (e.size()>=m)
+		{
 			e.remove(m-1);
+			for (int i=1;i<m;i++)
+			{
+				e.addLast(e.getFirst());
+				e.removeFirst();
+			}
+		}
 		else if (m%e.size()!=0)
 		{
 			e.remove(m%e.size()-1);
 		}
 		else e.remove(e.size()-1);
-		for (int i=1;i<m;i++)
-		{
-			e.addLast(e.getFirst());
-			e.removeFirst();
-		}
+		
 	}
 }
