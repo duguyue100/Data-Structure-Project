@@ -42,7 +42,13 @@ public class Ring {
 		}
 		else if (m%e.size()!=0)
 		{
+			int n=m%e.size();
 			e.remove(m%e.size()-1);
+			for (int i=1;i<n;i++)
+			{
+				e.addLast(e.getFirst());
+				e.removeFirst();
+			}
 		}
 		else e.remove(e.size()-1);
 		
