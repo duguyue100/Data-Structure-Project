@@ -63,24 +63,26 @@ public class CalculatorUtility {
 				b.push(ch);
 			else if (ch=='(')
 				a.push(ch);
+			else if (ch==')')
+			{
+				while (a.peek()!=')')
+					b.push(a.pop());
+				a.pop();
+			}
 			else if (ch=='+'||ch=='-'||ch=='*'||ch=='/'||ch=='^')
 			{
 				char t=a.peek();
-				if ((t!='(')&&(rank(t)==rank(ch))&&ch=='^')
+				if ((rank(t)==rank(ch))&&ch=='^')
 					a.push(ch);
-				else if ((t!='(')&&(rank(t)>=rank(ch)))
-				{
-					b.push(a.pop());
+				else if (rank(t)<rank(ch))
+					a.push(ch);
+				else{
+					while (rank(ch)<=rank(a.peek()))
+					{
+						b.push(a.pop());
+					}
 					a.push(ch);
 				}
-				else a.push(ch);
-			}
-			else if (ch==')')
-			{
-				while (a.peek()!='(')
-					b.push(a.pop());
-				if (a.peek()=='(')
-					a.pop();
 			}
 		}
 		
