@@ -65,7 +65,7 @@ public class CalculatorUtility {
 				a.push(ch);
 			else if (ch==')')
 			{
-				while (a.peek()!=')')
+				while (a.peek()!='(')
 					b.push(a.pop());
 				a.pop();
 			}
