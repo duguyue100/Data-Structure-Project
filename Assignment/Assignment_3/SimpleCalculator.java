@@ -19,13 +19,13 @@ public class SimpleCalculator {
 		{
 			System.out.print("Enter your preference: ");
 			Scanner inputN=new Scanner(System.in);
-			int choice=inputN.nextInt();
-			System.out.print("Please Enter your Infix notation: ");
+			String choice=inputN.nextLine();
 			Scanner inputS=new Scanner(System.in);
-			String infix=inputS.nextLine();
 			
-			if (choice==1)
+			if (choice.equals("1"))
 			{
+				System.out.print("Please Enter your Infix notation: ");
+				String infix=inputS.nextLine();
 				String preFix=cal.ConvertInfix_Prefix(infix);
 				System.out.println("YOUR Prefix is: ");
 				System.out.println(preFix);
@@ -36,8 +36,10 @@ public class SimpleCalculator {
 				}
 				
 			}
-			else if (choice==2)
+			else if (choice.equals("2"))
 			{
+				System.out.print("Please Enter your Infix notation: ");
+				String infix=inputS.nextLine();
 				String postFix=cal.ConvertInfix_Postfix(infix);
 				System.out.println("YOUR Postfix is: ");
 				System.out.println(postFix);
@@ -47,6 +49,7 @@ public class SimpleCalculator {
 					System.out.println(cal.EvaluatePostfix_Expression(postFix));
 				}
 			}
+			else System.out.println("You enter a invalid choice.");
 			
 			System.out.println("Do you want to continue (Y/N):");
 			
